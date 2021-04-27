@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  PokemonTCG_SwiftUI
+
+  Created by Adrián Bolaños Ríos on 27/04/2021.
+  
+*/
+
+
+"name" = "Nombre";
+"supertype" = "Supertipo";
+"subtypes" = "Subtipos";
+"types" = "Tipos";
+"hp" = "HP";
+"cards" = "Cartas";

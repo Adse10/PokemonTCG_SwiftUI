@@ -1,0 +1,15 @@
+//
+//  StringExtension.swift
+//  PokemonTCG_SwiftUI
+//
+//  Created by Adrián Bolaños Ríos on 27/04/2021.
+//
+
+import Foundation
+
+extension String {
+    
+    func localize() -> String {
+        return NSLocalizedString(self, comment: "")
+    }
+}
