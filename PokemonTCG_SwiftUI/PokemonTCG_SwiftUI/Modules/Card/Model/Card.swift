@@ -24,18 +24,18 @@ struct CardDetail: Codable {
 }
 
 struct Card: Codable, Identifiable {
-    let id: String
-    let name: String?
-    let supertype: String?
-    let hp: String?
-    let number: String?
-    let artist: String?
-    let rarity: String?
-    let subtypes: [String]?
-    let types: [String]?
-    let attacks: [Attack]?
-    let weaknesses: [Weakness]?
-    let images: Images?
+    var id: String
+    var name: String?
+    var supertype: String?
+    var hp: String?
+    var number: String?
+    var artist: String?
+    var rarity: String?
+    var subtypes: [String]?
+    var types: [String]?
+    var attacks: [Attack]?
+    var weaknesses: [Weakness]?
+    var images: Images?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -50,6 +50,10 @@ struct Card: Codable, Identifiable {
         case attacks
         case weaknesses
         case images
+    }
+    
+    init(){
+      self.id = ""
     }
 }
 

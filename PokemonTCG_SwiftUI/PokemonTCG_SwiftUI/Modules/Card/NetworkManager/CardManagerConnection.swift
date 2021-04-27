@@ -40,7 +40,7 @@ class CardManagerConnection {
         
         let session = URLSession.shared
         
-        var components = URLComponents(string: Endpoints.main + Endpoints.detailCard + idCard)
+        let components = URLComponents(string: Endpoints.main + Endpoints.detailCard + idCard)
         
         let request = URLRequest(url: (components?.url)!)
         

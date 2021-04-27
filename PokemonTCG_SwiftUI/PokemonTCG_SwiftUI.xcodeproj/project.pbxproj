@@ -19,6 +19,8 @@
 		515FFEDC263879A20059498D /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FFEDB263879A20059498D /* CardListViewModel.swift */; };
 		515FFEDF26387DC20059498D /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FFEDE26387DC20059498D /* CardRow.swift */; };
 		515FFEE426387E330059498D /* FetchImage in Frameworks */ = {isa = PBXBuildFile; productRef = 515FFEE326387E330059498D /* FetchImage */; };
+		515FFEE7263888480059498D /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FFEE6263888480059498D /* CardDetailView.swift */; };
+		515FFEEA26388A180059498D /* CardDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FFEE926388A180059498D /* CardDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		515FFED82638742C0059498D /* CardManagerConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardManagerConnection.swift; sourceTree = "<group>"; };
 		515FFEDB263879A20059498D /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
 		515FFEDE26387DC20059498D /* CardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRow.swift; sourceTree = "<group>"; };
+		515FFEE6263888480059498D /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
+		515FFEE926388A180059498D /* CardDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 		515FFED1263873EC0059498D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				515FFEE6263888480059498D /* CardDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 		515FFED2263873EF0059498D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				515FFEE926388A180059498D /* CardDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -264,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				515FFEE7263888480059498D /* CardDetailView.swift in Sources */,
 				515FFEC9263873760059498D /* StringExtension.swift in Sources */,
 				515FFEB12638725D0059498D /* ContentView.swift in Sources */,
+				515FFEEA26388A180059498D /* CardDetailViewModel.swift in Sources */,
 				515FFEDF26387DC20059498D /* CardRow.swift in Sources */,
 				515FFED4263873FC0059498D /* Card.swift in Sources */,
 				515FFEAF2638725D0059498D /* PokemonTCG_SwiftUIApp.swift in Sources */,

@@ -12,6 +12,8 @@ struct CardRow: View {
     
     let card: Card
     @StateObject private var image = FetchImage()
+    @State private var isActive = false
+    @State var idCard: String = ""
     
     var body: some View {
         ZStack {
@@ -22,6 +24,13 @@ struct CardRow: View {
                 image.view?
                     .resizable()
                     .aspectRatio(contentMode: .fill)
+                    .onTapGesture {
+                        self.isActive = true
+                        self.idCard = card.id
+                    }
+                    .background(NavigationLink(destination: CardDetailView(idCard: self.idCard), isActive: $isActive, label: {
+                        EmptyView()
+                    }))
             }
         }
         .animation(.default)
